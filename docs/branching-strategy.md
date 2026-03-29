@@ -13,7 +13,7 @@ Our goal is to:
 
 ## Key Idea
 
-Branches are **not folders** — they are separate timelines of work.
+Branches are **not folders,** they are separate timelines of work.
 
 When you create a branch, you are making your own version of the project to safely work on.
 
@@ -119,7 +119,7 @@ This prevents conflicts and keeps the project organized.
 
 ## Simple Explanation
 
-> “You don’t work inside develop — you branch off of it.”
+> “You don’t work inside develop you branch off of it.”
 
 ---
 
