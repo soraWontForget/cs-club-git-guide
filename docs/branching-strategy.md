@@ -1,5 +1,3 @@
-
-
 # Branching Strategy (CS Club)
 
 ## Purpose
