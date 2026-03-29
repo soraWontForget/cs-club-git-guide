@@ -71,9 +71,9 @@ git commit -m "feat: add login button"
 Think of this as saving your progress.
 Perform a commit when you've reached a milestone in your program progress.
 Commit messages should be short and use imparative present tense:
-	•	feat: add login button to homepage
-	•	fix: correct navbar alignment on mobile
-    •	docs: update workflow guide with examples
+- feat: add login button to homepage
+- fix: correct navbar alignment on mobile
+- docs: update workflow guide with examples
 
 Let your comments in the code itself explain in detail.
 
