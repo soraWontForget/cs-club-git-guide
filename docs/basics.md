@@ -10,7 +10,7 @@ This guide teaches you how to safely:
 - Save your work
 - Share your work with others
 
-You are **not expected to understand everything yet** — just follow the steps.
+You are **not expected to understand everything yet.** just follow the steps.
 
 ---
 
@@ -162,13 +162,14 @@ Types:
 Before opening a PR:
 - Code runs
 - You tested it
+- You understand it
 - Someone else can understand it
 
 ---
 
 ## If You Get Stuck
 
-That’s normal.
+That’s normal!
 
 Ask:
 - A club officer
@@ -176,7 +177,7 @@ Ask:
 
 ---
 
-## Level 1 Checklist
+## Checklist
 
 You should be able to:
 
