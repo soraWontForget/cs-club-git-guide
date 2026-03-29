@@ -1,5 +1,3 @@
-
-
 # Git Basics (CS Club)
 
 ## Purpose
@@ -57,7 +55,7 @@ Follow these steps every time you work.
 
 ---
 
-### Step 1: Get latest code from the 'develop' branch
+### Step 1: Get latest code from the `develop` branch
 
 ```
 git checkout develop
@@ -95,6 +93,7 @@ git commit -m "feat: describe what you did"
 Examples:
 - `feat: add login button`
 - `fix: correct typo in header`
+- `docs: update workflow guide with examples`
 
 ---
 
