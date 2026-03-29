@@ -119,7 +119,7 @@ This prevents conflicts and keeps the project organized.
 
 ## Simple Explanation
 
-> “You don’t work inside develop you branch off of it.”
+> “You don’t work inside develop, you branch off of it.”
 
 ---
 
