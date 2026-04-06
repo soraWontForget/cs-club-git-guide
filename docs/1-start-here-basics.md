@@ -3,12 +3,14 @@
 ## Purpose
 
 This guide teaches you how to safely:
+- Direct you to instructions for installing git and initializing your git config name and email
+- Generate an SSH key
 - Get code from a repository
 - Make changes
 - Save your work
 - Share your work with others
 
-You are **not expected to understand everything yet.** just follow the steps.
+You are **not expected to understand everything yet**. just follow the steps.
 
 ---
 
@@ -21,22 +23,104 @@ Git is like a **save system for code**.
 - **Branch** = your personal workspace
 - **Pull Request (PR)** = asking to merge your work into the project
 
-Your goal:
-> Make changes without breaking other people’s work
+The goal is to make changes without breaking other people’s work
 
 ---
 
-## One-Time Setup
-
-### Install Git
+# One-Time Setup
+### <u>Setting Up Git</u>
+#### Step 1:
+Install git <br>
 https://git-scm.com/
 
-### Set your identity
+#### Step 2:
+Set your identity
 
 ```
 git config --global user.name "Your Name"
 git config --global user.email "your@email.com"
 ```
+
+#### Step 3:
+Setup your github account at:
+```
+https://github.com
+```
+
+
+### <u>Setting Up SSH</u>
+
+#### Step 1:
+Open your terminal and test that ssh is installed by typing the following:
+
+Windows:
+
+```
+where.exe ssh
+```
+
+MacOS/Linux:
+```
+which ssh
+```
+
+Ask for help if an error is returned.
+
+#### Step 2:
+Generate your key with the following command. Use the email address associated with your github account:
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+When prompted for file location/name and password, continuously press enter: <br>
+![ssh-keygen step2](img/ssh-gen-ex.png "Screenshot")
+
+#### Step 3:
+Add your ssh key to ssh-agent
+
+Windows:
+```
+Set-Service -Name ssh-agent -StartupType Automatic
+Start-Service ssh-agent
+ssh-add $env:USERPROFILE\.ssh\id_ed25519
+```
+
+MacOS/Linux:
+```
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+
+#### Step 4:
+In your terminal, cat the contents of your public key: <br>
+![ssh-keygen step4](img/cat-ssh-key.png "Screenshot")
+
+
+#### Step 5:
+Go to your github account and open your settings: <br>
+![ssh-keygen step5](img/gh-settings-button.png "Screenshot")
+
+#### Step 6:
+Click on the ssh and gpg key menu button: <br>
+![ssh-keygen step6](img/ssh-gpg-key-loc.png "Screenshot")
+
+#### Step 7:
+Click the Add New Key button: <br>
+![ssh-keygen step7](img/new-ssh-key-but.png "Screenshot")
+
+#### Step 8:
+Name the key, select "Authentication Key" for the Key typoe and paste the whole key into the textbox: <br>
+![ssh-keygen step8](img/add-new-ssh-key.png "Screenshot")
+
+#### Step 9:
+If successful, you should see the sucess toast message: <br>
+![ssh-keygen step9](img/ssh-key-add-success.png "Screenshot")
+
+#### Step 10:
+In your terminal enter the following to test that your key is working with github: <br>
+```
+ssh -T git@github.com
+```
+![ssh-keygen step10](img/key-check.png "Screenshot")
 
 ---
 
@@ -55,7 +139,7 @@ Follow these steps every time you work.
 
 ---
 
-### Step 1: Get latest code from the `develop` branch
+#### Step 1: Get latest code from the `develop` branch
 
 ```
 git checkout develop
@@ -64,7 +148,7 @@ git pull
 
 ---
 
-### Step 2: Create a branch
+#### Step 2: Create a branch
 
 ```
 git checkout -b feature/your-feature-name
@@ -83,7 +167,7 @@ Examples:
 
 ---
 
-### Step 3: Make changes and commit
+#### Step 3: Make changes and commit
 
 ```
 git add <filename>
@@ -97,7 +181,7 @@ Examples:
 
 ---
 
-### Step 4: Push your branch
+#### Step 4: Push your branch
 
 ```
 git push origin feature/your-feature-name
@@ -105,7 +189,7 @@ git push origin feature/your-feature-name
 
 ---
 
-### Step 5: Open a Pull Request
+#### Step 5: Open a Pull Request
 
 On GitHub:
 - Click "Compare & Pull Request"
