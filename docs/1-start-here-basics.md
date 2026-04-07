@@ -30,7 +30,7 @@ The goal is to make changes without breaking other people’s work
 # One-Time Setup
 ### <u>Setting Up Git</u>
 #### Step 1:
-Install git <br>
+Install git following the instructions provided by the devlopers. Windows users will want to use the standalone installer for their appropriate cpu architecture: <br>
 https://git-scm.com/
 
 #### Step 2:
@@ -126,8 +126,19 @@ ssh -T git@github.com
 
 ## Clone the Project (First Time Only)
 
+#### Step 1:
+Navigate to the repo and click on the '<> Code' button<br>
+![clone-proj step1](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/key-check.png "Screenshot")
+
+#### Step 2:
+Click on the "SSH" tab and copy the link: <br>
+![clone-proj step2](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/key-check.png "Screenshot")
+
+#### Step 3:
+In your terminal, navigate to the directory you want to download the repo to then type the following:
+
 ```
-git clone <repo-url>
+git clone <repo-ssh-url>
 cd <repo-folder>
 ```
 
