@@ -101,40 +101,45 @@ ssh-add ~/.ssh/id_ed25519
 In your terminal, cat the contents of your public key: <br>
 ![ssh-keygen step4](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/cat-ssh-key.png "Screenshot")
 
+---
 
 #### Step 5:
 
----
 Go to your github account and open your settings: <br>
 ![ssh-keygen step5](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/gh-settings-button.png "Screenshot")
 
+---
+
 #### Step 6:
 
----
 Click on the ssh and gpg key menu button: <br>
 ![ssh-keygen step6](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/ssh-gpg-key-loc.png "Screenshot")
 
+---
+
 #### Step 7:
 
----
 Click the Add New Key button: <br>
 ![ssh-keygen step7](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/new-ssh-key-but.png "Screenshot")
 
+---
+
 #### Step 8:
 
----
 Name the key, select "Authentication Key" for the Key typoe and paste the whole key into the textbox: <br>
 ![ssh-keygen step8](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/add-new-ssh-key.png "Screenshot")
 
+---
+
 #### Step 9:
 
----
 If successful, you should see the sucess toast message: <br>
 ![ssh-keygen step9](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/ssh-key-add-success.png "Screenshot")
 
+---
+
 #### Step 10:
 
----
 In your terminal enter the following to test that your key is working with github: <br>
 ```
 ssh -T git@github.com
@@ -149,9 +154,13 @@ ssh -T git@github.com
 Navigate to the repo and click on the '<> Code' button:<br>
 ![clone-proj step1](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/gh-code-but.png "Screenshot")
 
+---
+
 #### Step 2:
 Click on the "SSH" tab and copy the link: <br>
 ![clone-proj step2](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/gh-ssh-url.png "Screenshot")
+
+---
 
 #### Step 3:
 In your terminal, navigate to the directory you want to download the repo to then type the following:
