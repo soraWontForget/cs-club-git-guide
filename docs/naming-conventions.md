@@ -1,7 +1,4 @@
-# Naming Conventions (CS Club)
-
-## Purpose
-
+# Naming Conventions
 This document defines our naming conventions for files, folders, branches, and code.
 
 Our goal is to:
@@ -28,88 +25,13 @@ in the same project unless there is a clear language-specific reason.
 
 ---
 
-# Files and Folders
-
-## Folder Names
+# Files and Folders Names
 
 Use **kebab-case** for folders:
-
-```text
-my-project
-docs
-desktop-app
-nfc-attendance
-# Naming Conventions (CS Club)
-
-## Purpose
-
-This document defines our naming conventions for files, folders, branches, and code.
-
-Our goal is to:
-- keep projects readable
-- reduce confusion
-- make collaboration easier
-- avoid mixing styles in the same repo
-
-Consistency matters more than perfection.
-
----
-
-## General Rule
-
-Pick one style for each category and use it consistently.
-
-We do **not** want a mix like:
-- `loginPage`
-- `login_page`
-- `LoginPage`
-- `login-page`
-
-in the same project unless there is a clear language-specific reason.
-
----
-
-# 📁 Files and Folders
-
-## Folder Names
-
-Use **kebab-case** for folders:
-
-```text
-my-project
-docs
-desktop-app
-nfc-attendance
-```
-
-### Rules
-- lowercase only
-- use hyphens (`-`)
-- no spaces
-
-### Good
-- `docs`
-- `desktop-app`
-- `web-client`
-- `shared-assets`
-
-### Avoid
-- `DesktopApp`
-- `desktop_app`
-- `Desktop App`
-
----
-
-## File Names
-
-Use **kebab-case** for most files:
-
-```text
-branching-strategy.md
-naming-conventions.md
-login-page.html
-user-profile.js
-```
+- my-project
+- docs
+- desktop-app
+- nfc-attendance
 
 ### Rules
 - lowercase only
@@ -130,7 +52,7 @@ user-profile.js
 
 ## Special Files
 
-Some files follow standard naming conventions and should NOT be changed:
+Some files follow standard naming conventions and should **NOT** be changed:
 
 ```text
 README.md
@@ -190,7 +112,7 @@ Format:
 
 ## Important Rule
 
-> Follow the language or framework’s standard when it exists.
+Follow the language or framework’s standard when it exists.
 
 Examples:
 - Python → `snake_case`
@@ -249,7 +171,7 @@ API_BASE_URL
 
 ## Private Fields (optional)
 
-Some languages use prefixes:
+Some languages like python use prefixes:
 
 ```text
 _userName
@@ -281,19 +203,6 @@ If a language or framework defines a style, it takes precedence.
 - files → `kebab-case`
 - JS variables → `camelCase`
 - React components → `PascalCase`
-
----
-
-# What to Avoid
-
-Mixing styles without a reason:
-
-```text
-loginPage.js
-user_profile.js
-Studentrecord.cpp
-MAXUsers
-```
 
 ---
 

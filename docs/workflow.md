@@ -1,6 +1,4 @@
-# Workflow (CS Club)
-
-## Purpose
+# Workflow
 
 This document shows the full workflow from starting work to merging it into the project.
 
@@ -20,13 +18,10 @@ develop → feature → commit → push → PR → develop → main
 
 # Example: Adding a Login Button
 
-Let’s walk through a real example.
+Let’s walk through a real example whgere you are adding a login button to the project.
 
-> You are adding a login button to the project.
-
----
-
-## Step 1: Get the latest code from the `develop` branch.
+#### Step 1:
+Get the latest code from the `develop` branch.
 
 ```bash
 git checkout develop
@@ -35,9 +30,9 @@ git pull
 
 Always start here so you are working on the latest version.
 
----
 
-## Step 2: Create your branch
+#### Step 2:
+Create your branch
 
 ```bash
 git checkout -b feature/login-button
@@ -45,9 +40,8 @@ git checkout -b feature/login-button
 
 This is your personal workspace. No one else is working here.
 
----
-
-## Step 3: Do your work
+#### Step 3:
+Do your work
 
 - Add your code
 - Comment your code
@@ -59,9 +53,9 @@ Examples of a milestone of work done:
 - Update UI with a pane of buttons
 - Connect a set of UI elements to functions
 
----
 
-## Step 4: Save your work
+#### Step 4:
+Save your work
 
 ```bash
 git add <filename>
@@ -77,9 +71,8 @@ Commit messages should be short and use imparative present tense:
 
 Let your comments in the code itself explain in detail.
 
----
-
-## Step 5: Push your branch
+#### Step 5:
+Push your branch
 
 ```bash
 git push --set-upstream origin feature/login-button
@@ -87,9 +80,8 @@ git push --set-upstream origin feature/login-button
 
 This uploads your work to GitHub.
 
----
-
-## Step 6: Open a Pull Request (PR)
+#### Step 6:
+Open a Pull Request (PR)
 
 When your task is complete, open a pull request
 
@@ -101,17 +93,15 @@ Include:
 - Summary of what you did
 - How to test it
 
----
-
-## Step 7: Review and Merge
+#### Step 7:
+Review and Merge
 
 - Another member (usually a maintainer) reviews your code
 - Changes may be requested
 - Once approved, your branch is merged into `develop`
 
----
-
-## Step 8: Promote to main (maintainers only)
+#### Step 8:
+Promote to main (maintainers only)
 
 Later, when `develop` is stable:
 
@@ -128,7 +118,7 @@ This updates the `main` stable version of the project.
 
 # Repeat the Process
 
-> Every new task = new branch
+Every new task = new branch
 
 Example:
 - `feature/signup-page`
@@ -154,30 +144,17 @@ This prevents merge conflicts later.
 
 # Common Mistakes
 
-### Forgetting to pull first
-You may get conflicts later.
+#### Mistake 1: Forgetting to pull first
+- You may get conflicts later.
 
----
+#### Mistake 2: Working directly on `develop`
+- This can break the shared project.
 
-### Working directly on `develop`
-This can break the shared project.
+#### Mistake 3: Huge branches
+- Large changes are harder to review and merge.
 
----
-
-### Huge branches
-Large changes are harder to review and merge.
-
----
-
-### Mixing multiple features in one branch
-Keep branches focused on one task.
-
----
-
-# Simple Rule
-
-> “Branch off develop, do your work safely, then merge back in.”
-
+#### Mistake 4: Mixing multiple features in one branch
+- Keep branches focused on one task.
 ---
 
 # Summary

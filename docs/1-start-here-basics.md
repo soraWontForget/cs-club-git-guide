@@ -8,11 +8,7 @@ This guide teaches you how to:
 - Save your work
 - Share your work with others
 
-You are **not expected to understand everything yet**. just follow the steps.
-
----
-
-## Core Concepts
+You are **not expected to understand everything yet**. just follow the steps. <br>
 
 Git is like a **save system for code**.
 
@@ -21,7 +17,9 @@ Git is like a **save system for code**.
 - **Branch** = your personal workspace
 - **Pull Request (PR)** = asking to merge your work into the project
 
-The goal is to make changes without breaking other people’s work
+<br>The goal is to make changes without breaking other people’s work.<br>
+
+**This guide assumes that you have already been added as a collaborator to a repo.**
 
 ---
 
@@ -251,6 +249,7 @@ Types:
 - `feat:` new feature
 - `fix:` bug fix
 - `docs:` documentation
+- `refactor` changes that don't affect existing behavior
 
 ---
 

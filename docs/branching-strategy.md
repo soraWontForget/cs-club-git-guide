@@ -1,6 +1,4 @@
-# Branching Strategy (CS Club)
-
-## Purpose
+# Branching Strategy
 
 This document explains how we organize our work using branches.
 
@@ -8,10 +6,6 @@ Our goal is to:
 - Keep the project stable
 - Allow multiple people to work at the same time
 - Prevent people from breaking each other’s work
-
----
-
-## Key Idea
 
 Branches are **not folders,** they are separate timelines of work.
 
@@ -58,9 +52,14 @@ Rules:
 - Keep branches small and focused
 - Merge back into `develop` using a Pull Request
 
+
+## Example Branch Structure on Github
+
+![branch-strat](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/gh-branch-ex.png "Screenshot")
+
 ---
 
-## Workflow Overview
+# Workflow Overview
 
 ```
 develop → feature/your-work → develop → main
@@ -117,13 +116,7 @@ This prevents conflicts and keeps the project organized.
 
 ---
 
-## Simple Explanation
-
-> “You don’t work inside develop, you branch off of it.”
-
----
-
-## Summary
+# Summary
 
 - `main` = stable
 - `develop` = team progress
