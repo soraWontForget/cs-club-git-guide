@@ -128,11 +128,11 @@ ssh -T git@github.com
 
 #### Step 1:
 Navigate to the repo and click on the '<> Code' button<br>
-![clone-proj step1](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/key-check.png "Screenshot")
+![clone-proj step1](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/gh-code-but.png "Screenshot")
 
 #### Step 2:
 Click on the "SSH" tab and copy the link: <br>
-![clone-proj step2](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/key-check.png "Screenshot")
+![clone-proj step2](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/gh-ssh-url.png "Screenshot")
 
 #### Step 3:
 In your terminal, navigate to the directory you want to download the repo to then type the following:
