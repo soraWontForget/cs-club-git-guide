@@ -1,6 +1,4 @@
-# Git Basics (CS Club)
-
-## Purpose
+# Git Basics
 
 This guide teaches you how to:
 - Install git and initialize your git config name and email
@@ -14,7 +12,7 @@ You are **not expected to understand everything yet**. just follow the steps.
 
 ---
 
-## Core Concept
+## Core Concepts
 
 Git is like a **save system for code**.
 
@@ -270,13 +268,12 @@ Before opening a PR:
 
 That’s normal!
 
-Ask:
-- A club officer
-- Another member
+Ask a club officer or another club member for help
+
 
 ---
 
-## Checklist
+# Checklist
 
 You should be able to:
 
