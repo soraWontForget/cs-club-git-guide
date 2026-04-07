@@ -2,8 +2,8 @@
 
 ## Purpose
 
-This guide teaches you how to safely:
-- Direct you to instructions for installing git and initializing your git config name and email
+This guide teaches you how to:
+- Install git and initialize your git config name and email
 - Generate an SSH key
 - Get code from a repository
 - Make changes
@@ -75,7 +75,7 @@ When prompted for file location/name and password, continuously press enter: <br
 ![ssh-keygen step2](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/ssh-gen-ex.png "Screenshot")
 
 #### Step 3:
-Add your ssh key to ssh-agent
+Add your ssh key to ssh-agent:
 
 Windows:
 ```
@@ -127,7 +127,7 @@ ssh -T git@github.com
 ## Clone the Project (First Time Only)
 
 #### Step 1:
-Navigate to the repo and click on the '<> Code' button<br>
+Navigate to the repo and click on the '<> Code' button:<br>
 ![clone-proj step1](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/gh-code-but.png "Screenshot")
 
 #### Step 2:
@@ -144,13 +144,14 @@ cd <repo-folder>
 
 ---
 
-## Workflow
+# Workflow
 
 Follow these steps every time you work.
 
 ---
 
-#### Step 1: Get latest code from the `develop` branch
+#### Step 1:
+Get latest code from the `develop` branch
 
 ```
 git checkout develop
@@ -159,7 +160,8 @@ git pull
 
 ---
 
-#### Step 2: Create a branch
+#### Step 2:
+Create a branch
 
 ```
 git checkout -b feature/your-feature-name
@@ -178,7 +180,8 @@ Examples:
 
 ---
 
-#### Step 3: Make changes and commit
+#### Step 3:
+Make changes and commit
 
 ```
 git add <filename>
@@ -192,7 +195,8 @@ Examples:
 
 ---
 
-#### Step 4: Push your branch
+#### Step 4:
+Push your branch
 
 ```
 git push origin feature/your-feature-name
@@ -200,7 +204,8 @@ git push origin feature/your-feature-name
 
 ---
 
-#### Step 5: Open a Pull Request
+#### Step 5:
+Open a Pull Request
 
 On GitHub:
 - Click "Compare & Pull Request"
@@ -212,9 +217,9 @@ Include:
 
 ---
 
-## Branch Strategy (Simple)
+# Branch Strategy
 
-We use:
+Use:
 
 - `main` → stable version
 - `develop` → current working version
@@ -228,7 +233,7 @@ develop → feature → develop → main
 
 ---
 
-## Rules
+# Rules
 
 - Do NOT push directly to `main`
 - Do NOT work directly on `develop`
