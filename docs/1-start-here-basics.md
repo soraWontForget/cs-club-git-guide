@@ -29,6 +29,8 @@ Git is like a **save system for code**.
 Install git following the instructions provided by the devlopers. Windows users will want to use the standalone installer for their appropriate cpu architecture: <br>
 https://git-scm.com/
 
+---
+
 #### Step 2:
 Set your identity
 
@@ -37,12 +39,15 @@ git config --global user.name "Your Name"
 git config --global user.email "your@email.com"
 ```
 
+---
+
 #### Step 3:
 Setup your github account at:
 ```
 https://github.com
 ```
 
+---
 
 ### <u>Setting Up SSH</u>
 
@@ -62,6 +67,8 @@ which ssh
 
 Ask for help if an error is returned.
 
+---
+
 #### Step 2:
 Generate your key with the following command. Use the email address associated with your github account:
 ```
@@ -69,6 +76,8 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 When prompted for file location/name and password, continuously press enter: <br>
 ![ssh-keygen step2](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/ssh-gen-ex.png "Screenshot")
+
+---
 
 #### Step 3:
 Add your ssh key to ssh-agent:
@@ -86,32 +95,46 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 ```
 
+---
+
 #### Step 4:
 In your terminal, cat the contents of your public key: <br>
 ![ssh-keygen step4](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/cat-ssh-key.png "Screenshot")
 
 
 #### Step 5:
+
+---
 Go to your github account and open your settings: <br>
 ![ssh-keygen step5](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/gh-settings-button.png "Screenshot")
 
 #### Step 6:
+
+---
 Click on the ssh and gpg key menu button: <br>
 ![ssh-keygen step6](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/ssh-gpg-key-loc.png "Screenshot")
 
 #### Step 7:
+
+---
 Click the Add New Key button: <br>
 ![ssh-keygen step7](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/new-ssh-key-but.png "Screenshot")
 
 #### Step 8:
+
+---
 Name the key, select "Authentication Key" for the Key typoe and paste the whole key into the textbox: <br>
 ![ssh-keygen step8](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/add-new-ssh-key.png "Screenshot")
 
 #### Step 9:
+
+---
 If successful, you should see the sucess toast message: <br>
 ![ssh-keygen step9](https://github.com/soraWontForget/cs-club-git-guide/blob/docs/basics/img/ssh-key-add-success.png "Screenshot")
 
 #### Step 10:
+
+---
 In your terminal enter the following to test that your key is working with github: <br>
 ```
 ssh -T git@github.com

@@ -30,6 +30,7 @@ git pull
 
 Always start here so you are working on the latest version.
 
+---
 
 #### Step 2:
 Create your branch
@@ -39,6 +40,8 @@ git checkout -b feature/login-button
 ```
 
 This is your personal workspace. No one else is working here.
+
+---
 
 #### Step 3:
 Do your work
@@ -53,6 +56,7 @@ Examples of a milestone of work done:
 - Update UI with a pane of buttons
 - Connect a set of UI elements to functions
 
+---
 
 #### Step 4:
 Save your work
@@ -71,6 +75,8 @@ Commit messages should be short and use imparative present tense:
 
 Let your comments in the code itself explain in detail.
 
+---
+
 #### Step 5:
 Push your branch
 
@@ -79,6 +85,8 @@ git push --set-upstream origin feature/login-button
 ```
 
 This uploads your work to GitHub.
+
+---
 
 #### Step 6:
 Open a Pull Request (PR)
@@ -93,6 +101,8 @@ Include:
 - Summary of what you did
 - How to test it
 
+---
+
 #### Step 7:
 Review and Merge
 
@@ -101,6 +111,9 @@ Review and Merge
 - Once approved, your branch is merged into `develop`
 
 #### Step 8:
+
+---
+
 Promote to main (maintainers only)
 
 Later, when `develop` is stable:
